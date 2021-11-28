@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/pages/NotFoundPage/NotFoundPage.module.css"],"names":[],"mappings":"AAAA,mCACE,YAAa,CACb,gBAAiB,CACjB,iBACF","file":"7.4cfc5b4d.chunk.css","sourcesContent":[".mainContainer {\n  width: 1200px;\n  margin-left: auto;\n  margin-right: auto;\n}\n"]}

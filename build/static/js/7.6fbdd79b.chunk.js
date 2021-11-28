@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-react-hw-05-movies"]=this["webpackJsonpgoit-react-hw-05-movies"]||[]).push([[7],{94:function(t,n,i){t.exports={mainContainer:"NotFoundPage_mainContainer__zZsQQ"}},98:function(t,n,i){"use strict";i.r(n);i(0);var a=i(94),e=i.n(a),s=i(1);n.default=function(){return Object(s.jsx)("div",{className:e.a.mainContainer,children:Object(s.jsx)("img",{src:"https://i.stack.imgur.com/6M513.png",alt:"404"})})}}}]);
+//# sourceMappingURL=7.6fbdd79b.chunk.js.map
