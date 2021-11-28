@@ -1,0 +1,30 @@
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+
+.castItem {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 20px * 6) / 6);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.itemDescr {
+  padding: 10px;
+}
+
+.personName {
+  font-weight: 500;
+
+  color: #1f1f1f;
+}
+
+.character {
+  color: #505050;
+}

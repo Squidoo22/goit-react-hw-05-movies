@@ -1,0 +1,34 @@
+header {
+  background-color: #1f1f1f;
+
+  min-height: 10vh;
+}
+
+.mainContainer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainNavigation {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.mainNavigation__link {
+  display: block;
+  margin-right: 45px;
+  padding: 20px 0;
+
+  font-size: 25px;
+  font-weight: 600;
+
+  color: beige;
+}
+
+.mainNavigation__activeLink {
+  color: orange;
+}

@@ -1,0 +1,87 @@
+.moviesPage {
+  padding: 40px 0;
+}
+
+.mainContainer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchForm {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.searchForm__input {
+  width: 80%;
+  padding: 20px;
+  border: none;
+
+  outline: none;
+  border-radius: 5px;
+
+  font-size: 20px;
+
+  background-color: #e8e8e8;
+}
+
+.searchForm__button {
+  width: 20%;
+  padding: 20px;
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  color: #e8e8e8;
+  background-color: #1f1f1f;
+}
+
+.searchForm__button:hover,
+.searchForm__button:focus {
+  color: #1f1f1f;
+  background-color: orange;
+}
+
+.moviesList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin-right: -20px;
+  margin-bottom: -40px;
+}
+
+.moviesList__item {
+  display: flex;
+  flex-basis: calc((100% - 20px * 5) / 5);
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.moviesList__item:hover,
+.moviesList__item:focus {
+  transform: scale(1.03);
+}
+
+.moviesList__movieTitle {
+  margin-top: 5px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 17px;
+
+  color: #505050;
+}
+
+.moviesList__item:hover .moviesList__movieTitle,
+.moviesList__item:focus .moviesList__movieTitle {
+  color: orange;
+}
