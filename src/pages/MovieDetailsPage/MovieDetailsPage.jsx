@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   Route,
+  Switch,
   NavLink,
   useHistory,
   useLocation,
@@ -12,6 +13,8 @@ import { getIdFromSlug } from "../../services/slug";
 import MovieCast from "../../components/MovieCast/MovieCast";
 import MovieReviews from "../../components/MovieReviews/MovieReviews";
 import s from "./MovieDetailsPage.module.css";
+import { Suspense } from "react";
+import Loader from "react-loader-spinner";
 
 const MovieDetailsPage = () => {
   const [movie, setMovie] = useState(null);
@@ -104,13 +107,27 @@ const MovieDetailsPage = () => {
               </ul>
             </div>
 
-            <Route path={`${url}/cast`}>
-              <MovieCast movieId={movieId} />
-            </Route>
+            <Suspense
+              fallback={
+                <Loader
+                  className={s.loader}
+                  type="TailSpin"
+                  color="#00BFFF"
+                  height={100}
+                  width={100}
+                />
+              }
+            >
+              <Switch>
+                <Route path={`${url}/cast`}>
+                  <MovieCast movieId={movieId} />
+                </Route>
 
-            <Route path={`${url}/reviews`}>
-              <MovieReviews movieId={movieId} />
-            </Route>
+                <Route path={`${url}/reviews`}>
+                  <MovieReviews movieId={movieId} />
+                </Route>
+              </Switch>
+            </Suspense>
           </div>
         </section>
       )}

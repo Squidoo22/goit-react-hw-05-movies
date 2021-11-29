@@ -31,7 +31,7 @@ const App = () => {
       >
         <Switch>
           <Route exact path="/">
-            <HomePage></HomePage>
+            <HomePage />
           </Route>
 
           <Route path="/movies/:slug">
